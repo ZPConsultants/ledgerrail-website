@@ -1,0 +1,20 @@
+# LedgerRail.com — Apache Configuration
+# =========================================
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Route /api/qbo/disconnect to disconnect.php
+RewriteRule ^api/qbo/disconnect$ /api/qbo/disconnect.php [L,QSA]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Security headers
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Prevent directory listing
+Options -Indexes
