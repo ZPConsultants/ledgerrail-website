@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — LedgerRail</title>
+  <meta name="description" content="LedgerRail Privacy Policy. How we collect, use, store, and protect your information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --deep-slate: #1B2432;
+      --amber-gold: #D4A843;
+      --steel-blue: #4A6FA5;
+      --warm-white: #F8F7F4;
+      --near-black: #111827;
+      --slate-gray: #6B7280;
+      --light-gray: #E5E7EB;
+      --forest-green: #166534;
+      --font-display: 'Plus Jakarta Sans', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--near-black);
+      background: var(--warm-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
+    h1 { font-weight: 700; }
+    h2, h3 { font-weight: 600; }
+
+    a { color: var(--steel-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ───── NAV ───── */
+    .nav {
+      background: var(--deep-slate);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.25rem;
+      color: var(--warm-white); text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo:hover { text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a {
+      color: rgba(248,247,244,0.7); font-size: 0.875rem; font-weight: 500;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--warm-white); }
+
+    /* ───── DRAFT BANNER ───── */
+    .draft-banner {
+      background: #FEF3C7; border-bottom: 2px solid var(--amber-gold);
+      padding: 12px 24px; text-align: center;
+      font-size: 0.875rem; font-weight: 500; color: #92400E;
+    }
+
+    /* ───── CONTENT ───── */
+    .legal-content {
+      max-width: 768px; margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    .legal-content h1 {
+      font-size: 2rem; margin-bottom: 8px;
+    }
+    .legal-meta {
+      color: var(--slate-gray); font-size: 0.875rem;
+      margin-bottom: 48px; padding-bottom: 32px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    .legal-content h2 {
+      font-size: 1.375rem; margin-top: 48px; margin-bottom: 16px;
+      padding-top: 24px; border-top: 1px solid var(--light-gray);
+    }
+    .legal-content h2:first-of-type { border-top: none; padding-top: 0; }
+    .legal-content h3 {
+      font-size: 1.125rem; margin-top: 24px; margin-bottom: 12px;
+    }
+    .legal-content p {
+      margin-bottom: 16px; max-width: 65ch;
+    }
+    .legal-content ul {
+      margin-bottom: 16px; padding-left: 24px;
+    }
+    .legal-content li {
+      margin-bottom: 8px;
+    }
+
+    /* ───── DATA TABLE ───── */
+    .data-table {
+      width: 100%; border-collapse: collapse;
+      margin-bottom: 24px; font-size: 0.9375rem;
+    }
+    .data-table th {
+      background: var(--deep-slate); color: var(--warm-white);
+      font-family: var(--font-display); font-weight: 600;
+      text-align: left; padding: 12px 16px; font-size: 0.8125rem;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .data-table td {
+      padding: 12px 16px; border-bottom: 1px solid var(--light-gray);
+      vertical-align: top;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tbody tr:nth-child(even) { background: rgba(0,0,0,0.02); }
+
+    /* ───── HIGHLIGHT BOX ───── */
+    .highlight-box {
+      background: #F0FDF4; border: 1px solid #BBF7D0;
+      border-left: 4px solid var(--forest-green);
+      border-radius: 6px; padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p {
+      color: var(--forest-green); font-weight: 500; margin-bottom: 4px;
+    }
+    .highlight-box p:last-child { margin-bottom: 0; }
+
+    /* ───── FOOTER ───── */
+    .footer { background: var(--deep-slate); padding: 48px 0; }
+    .footer-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-brand { color: rgba(248,247,244,0.6); font-size: 0.875rem; }
+    .footer-brand a {
+      font-family: var(--font-display); font-weight: 700; font-size: 1rem;
+      color: var(--warm-white); text-decoration: none;
+    }
+    .footer-brand p { margin-top: 4px; }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a {
+      color: rgba(248,247,244,0.5); font-size: 0.875rem; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--warm-white); }
+    .footer-copy {
+      width: 100%; text-align: center; padding-top: 32px;
+      margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(248,247,244,0.4); font-size: 0.8125rem;
+    }
+
+    @media (max-width: 640px) {
+      .legal-content h1 { font-size: 1.75rem; }
+      .legal-content { padding: 32px 16px 64px; }
+      .data-table { font-size: 0.8125rem; }
+      .data-table th, .data-table td { padding: 8px 12px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">LedgerRail</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/legal/eula.html">EULA</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DRAFT BANNER -->
+  <div class="draft-banner">
+    <strong>DRAFT</strong> &mdash; This document is pending legal counsel review and is not yet final. Published for regulatory pre-submission purposes only.
+  </div>
+
+  <!-- CONTENT -->
+  <main class="legal-content">
+    <h1>Privacy Policy</h1>
+    <div class="legal-meta">
+      <p><strong>Effective Date:</strong> February 24, 2026</p>
+      <p><strong>Last Updated:</strong> February 24, 2026</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>Zalmy.AI (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) operates LedgerRail (&ldquo;Service&rdquo;), an AI agent governance platform. This Privacy Policy describes how we collect, use, store, and protect your information when you use the Service.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Account Information</h3>
+    <ul>
+      <li>Name, email address, and organization name provided during registration</li>
+      <li>Authentication credentials (stored encrypted)</li>
+    </ul>
+
+    <h3>2.2 Financial Data via Third-Party Integrations</h3>
+    <p>When you connect LedgerRail to QuickBooks Online (QBO) or other supported accounting systems via OAuth 2.0:</p>
+    <ul>
+      <li>Chart of accounts, journal entries, invoices, bills, and related financial records</li>
+      <li>Transaction metadata (dates, amounts, account codes, vendor/customer names)</li>
+      <li>We access only the data scopes you authorize during the OAuth consent flow</li>
+    </ul>
+
+    <h3>2.3 Governance and Audit Data</h3>
+    <ul>
+      <li>AI agent action proposals, policy evaluations, approval/denial decisions</li>
+      <li>Audit trail records (hash-chained, tamper-detectable)</li>
+      <li>User actions within the Service (approvals, policy changes, configuration)</li>
+    </ul>
+
+    <h3>2.4 Usage Data</h3>
+    <ul>
+      <li>IP address, browser type, device information</li>
+      <li>Pages visited, features used, session duration</li>
+      <li>Error logs and performance data</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ul>
+      <li>Provide, maintain, and improve the Service</li>
+      <li>Govern and audit AI agent actions per your configured policies</li>
+      <li>Generate audit trail records and compliance reports</li>
+      <li>Communicate with you about your account and the Service</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><strong>We do not use your financial data to train AI models.</strong></p>
+      <p><strong>We do not sell your data. Period.</strong></p>
+    </div>
+
+    <h2>4. Data Sharing</h2>
+    <p>We share your information only in the following circumstances:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Recipient</th>
+          <th>Purpose</th>
+          <th>Data Shared</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cloud hosting provider (e.g., Railway, Vercel)</td>
+          <td>Infrastructure</td>
+          <td>Encrypted application data</td>
+        </tr>
+        <tr>
+          <td>Intuit (via QBO OAuth)</td>
+          <td>Integration functionality</td>
+          <td>OAuth tokens only &mdash; data flows to us, not from us to Intuit beyond standard API calls</td>
+        </tr>
+        <tr>
+          <td>Law enforcement</td>
+          <td>Legal requirement</td>
+          <td>Only if compelled by valid legal process</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <p><strong>We do not share data with advertisers, data brokers, or analytics companies.</strong></p>
+    </div>
+
+    <h2>5. Data Security</h2>
+    <p>We implement reasonable technical and organizational measures to protect your data, including:</p>
+    <ul>
+      <li>Encryption in transit (TLS 1.2+) and at rest</li>
+      <li>Hash-chained audit trails with SHA-256 (tamper-detectable)</li>
+      <li>Role-based access controls</li>
+      <li>Regular security assessments</li>
+    </ul>
+    <p>No system is 100% secure. We cannot guarantee absolute security but will notify you of any breach affecting your data within 72 hours of discovery.</p>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li><strong>Account data:</strong> Retained while your account is active, deleted within 30 days of account closure</li>
+      <li><strong>Financial data from integrations:</strong> Deleted within 30 days of disconnecting the integration, unless required for audit trail integrity</li>
+      <li><strong>Audit trail records:</strong> Retained for 7 years (standard accounting retention period) or as required by applicable law</li>
+      <li><strong>Usage data:</strong> Retained for 12 months</li>
+    </ul>
+
+    <h2>7. Your Rights</h2>
+
+    <h3>7.1 All Users</h3>
+    <ul>
+      <li>Access your data and request a copy</li>
+      <li>Correct inaccurate information</li>
+      <li>Delete your account and associated data (subject to legal retention requirements)</li>
+      <li>Disconnect third-party integrations at any time</li>
+    </ul>
+
+    <h3>7.2 California Residents (CCPA)</h3>
+    <ul>
+      <li>Right to know what personal information is collected and how it is used</li>
+      <li>Right to delete personal information</li>
+      <li>Right to opt-out of sale &mdash; we do not sell your data, so this right is satisfied by default</li>
+      <li>Right to non-discrimination for exercising your rights</li>
+    </ul>
+
+    <h3>7.3 EU/EEA Residents (GDPR)</h3>
+    <ul>
+      <li>Rights of access, rectification, erasure, restriction, portability, and objection</li>
+      <li>Right to withdraw consent at any time</li>
+      <li>Right to lodge a complaint with a supervisory authority</li>
+      <li>Legal basis for processing: contract performance and legitimate interest</li>
+    </ul>
+
+    <h2>8. Cookies and Tracking</h2>
+    <p>We use essential cookies only for session management and authentication. We do not use advertising cookies or third-party tracking pixels. We do not use Google Analytics or similar tracking services at launch.</p>
+
+    <h2>9. Children&rsquo;s Privacy</h2>
+    <p>The Service is not directed to individuals under 18. We do not knowingly collect data from minors.</p>
+
+    <h2>10. International Data Transfers</h2>
+    <p>Your data is processed in the United States. If you are located outside the US, your data will be transferred to and processed in the US. We rely on standard contractual clauses or other lawful transfer mechanisms for international transfers where required.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be communicated via email or in-app notification at least 30 days before taking effect. The &ldquo;Last Updated&rdquo; date will reflect the most recent revision.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>For privacy-related inquiries, data access requests, or complaints:</p>
+    <p>
+      <strong>Zalmy.AI</strong><br>
+      Email: <a href="mailto:privacy@ledgerrail.com">privacy@ledgerrail.com</a><br>
+      General: <a href="mailto:hello@ledgerrail.com">hello@ledgerrail.com</a>
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/">LedgerRail</a>
+        <p>A Zalmy.AI Product</p>
+      </div>
+      <div class="footer-links">
+        <a href="/legal/eula.html">EULA</a>
+        <a href="/legal/privacy.html">Privacy Policy</a>
+        <a href="mailto:hello@ledgerrail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 Zalmy.AI. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

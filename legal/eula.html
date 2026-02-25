@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>End-User License Agreement — LedgerRail</title>
+  <meta name="description" content="LedgerRail End-User License Agreement (EULA). Terms governing your use of LedgerRail AI agent governance infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --deep-slate: #1B2432;
+      --amber-gold: #D4A843;
+      --steel-blue: #4A6FA5;
+      --warm-white: #F8F7F4;
+      --near-black: #111827;
+      --slate-gray: #6B7280;
+      --light-gray: #E5E7EB;
+      --font-display: 'Plus Jakarta Sans', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--near-black);
+      background: var(--warm-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
+    h1 { font-weight: 700; }
+    h2, h3 { font-weight: 600; }
+
+    a { color: var(--steel-blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ───── NAV ───── */
+    .nav {
+      background: var(--deep-slate);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.25rem;
+      color: var(--warm-white); text-decoration: none; letter-spacing: -0.02em;
+    }
+    .nav-logo:hover { text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a {
+      color: rgba(248,247,244,0.7); font-size: 0.875rem; font-weight: 500;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--warm-white); }
+
+    /* ───── DRAFT BANNER ───── */
+    .draft-banner {
+      background: #FEF3C7; border-bottom: 2px solid var(--amber-gold);
+      padding: 12px 24px; text-align: center;
+      font-size: 0.875rem; font-weight: 500; color: #92400E;
+    }
+
+    /* ───── CONTENT ───── */
+    .legal-content {
+      max-width: 768px; margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    .legal-content h1 {
+      font-size: 2rem; margin-bottom: 8px;
+    }
+    .legal-meta {
+      color: var(--slate-gray); font-size: 0.875rem;
+      margin-bottom: 48px; padding-bottom: 32px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    .legal-content h2 {
+      font-size: 1.375rem; margin-top: 48px; margin-bottom: 16px;
+      padding-top: 24px; border-top: 1px solid var(--light-gray);
+    }
+    .legal-content h2:first-of-type { border-top: none; padding-top: 0; }
+    .legal-content h3 {
+      font-size: 1.125rem; margin-top: 24px; margin-bottom: 12px;
+    }
+    .legal-content p {
+      margin-bottom: 16px; max-width: 65ch;
+    }
+    .legal-content ul {
+      margin-bottom: 16px; padding-left: 24px;
+    }
+    .legal-content li {
+      margin-bottom: 8px;
+    }
+    .legal-content .caps {
+      font-size: 0.9375rem;
+    }
+
+    /* ───── FOOTER ───── */
+    .footer { background: var(--deep-slate); padding: 48px 0; }
+    .footer-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .footer-brand { color: rgba(248,247,244,0.6); font-size: 0.875rem; }
+    .footer-brand a {
+      font-family: var(--font-display); font-weight: 700; font-size: 1rem;
+      color: var(--warm-white); text-decoration: none;
+    }
+    .footer-brand p { margin-top: 4px; }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+    .footer-links a {
+      color: rgba(248,247,244,0.5); font-size: 0.875rem; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--warm-white); }
+    .footer-copy {
+      width: 100%; text-align: center; padding-top: 32px;
+      margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(248,247,244,0.4); font-size: 0.8125rem;
+    }
+
+    @media (max-width: 640px) {
+      .legal-content h1 { font-size: 1.75rem; }
+      .legal-content { padding: 32px 16px 64px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">LedgerRail</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/legal/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DRAFT BANNER -->
+  <div class="draft-banner">
+    <strong>DRAFT</strong> &mdash; This document is pending legal counsel review and is not yet final. Published for regulatory pre-submission purposes only.
+  </div>
+
+  <!-- CONTENT -->
+  <main class="legal-content">
+    <h1>End-User License Agreement</h1>
+    <div class="legal-meta">
+      <p><strong>Effective Date:</strong> February 24, 2026</p>
+      <p><strong>Last Updated:</strong> February 24, 2026</p>
+    </div>
+
+    <h2>1. Agreement to Terms</h2>
+    <p>By accessing or using LedgerRail (&ldquo;Service&rdquo;), provided by Zalmy.AI (&ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), you (&ldquo;User,&rdquo; &ldquo;you&rdquo;) agree to be bound by this End-User License Agreement. If you do not agree, do not use the Service.</p>
+
+    <h2>2. Description of Service</h2>
+    <p>LedgerRail is a software-as-a-service (SaaS) platform that provides AI agent governance infrastructure. The Service authorizes, audits, and manages AI agent actions directed at business systems, including but not limited to accounting and financial systems accessed via third-party APIs (e.g., QuickBooks Online via Intuit&rsquo;s OAuth 2.0 protocol).</p>
+
+    <h2>3. License Grant</h2>
+    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Service for your internal business purposes, subject to the terms of this Agreement and any applicable subscription plan.</p>
+
+    <h2>4. User Responsibilities</h2>
+    <p>You agree to:</p>
+    <ul>
+      <li>Provide accurate registration and account information</li>
+      <li>Maintain the security of your account credentials</li>
+      <li>Comply with all applicable laws and regulations</li>
+      <li>Not use the Service for any unlawful purpose</li>
+      <li>Not attempt to reverse engineer, decompile, or disassemble the Service</li>
+      <li>Not share, resell, or sublicense access without written consent</li>
+      <li>Use third-party integrations (e.g., QuickBooks Online) in compliance with their respective terms of service</li>
+    </ul>
+
+    <h2>5. Data and Third-Party Integrations</h2>
+
+    <h3>5.1 QuickBooks Online Integration</h3>
+    <p>The Service connects to QuickBooks Online (&ldquo;QBO&rdquo;) via Intuit&rsquo;s OAuth 2.0 protocol. By authorizing the connection, you grant LedgerRail permission to access your QBO data as specified during the OAuth consent flow. You may revoke this access at any time through your QBO account settings or by contacting us.</p>
+
+    <h3>5.2 Data Handling</h3>
+    <p>We access your financial data solely to provide governance, audit trail, and agent management services. We do not sell your data. We do not share your data with third parties except as required to operate the Service (e.g., cloud hosting providers under data processing agreements).</p>
+
+    <h3>5.3 Disconnect</h3>
+    <p>You may disconnect the Service from your QBO account at any time. Upon disconnection, we will cease accessing your QBO data. Audit trail records generated during active use will be retained per our data retention policy (see <a href="/legal/privacy.html">Privacy Policy</a>).</p>
+
+    <h2>6. AI Agent Governance &mdash; Acceptable Use</h2>
+    <p>The Service governs AI agent actions. You acknowledge that:</p>
+    <ul>
+      <li>The Service evaluates and authorizes agent-proposed actions per configured policies</li>
+      <li>The Service does not guarantee that all agent errors will be prevented</li>
+      <li>Undo/reversal functionality depends on the nature of the underlying action and the connected system&rsquo;s capabilities</li>
+      <li>You remain responsible for the configuration of governance policies and approval chains</li>
+      <li>The Service supplements, but does not replace, your internal controls and professional judgment</li>
+    </ul>
+
+    <h2>7. Intellectual Property</h2>
+    <p>All rights, title, and interest in the Service, including all intellectual property rights, remain with Zalmy.AI. This Agreement does not grant you ownership of any part of the Service.</p>
+
+    <h2>8. Limitation of Liability</h2>
+    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, ZALMY.AI SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR USE, ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNTS PAID BY YOU TO US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</p>
+
+    <h2>9. Disclaimer of Warranties</h2>
+    <p class="caps">THE SERVICE IS PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE.&rdquo; ZALMY.AI DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.</p>
+
+    <h2>10. Termination</h2>
+    <p>Either party may terminate this Agreement at any time. We may suspend or terminate your access if you violate these terms. Upon termination:</p>
+    <ul>
+      <li>Your license to use the Service immediately ends</li>
+      <li>We will disconnect all third-party integrations</li>
+      <li>Audit trail data will be retained for 90 days, then deleted unless otherwise required by law</li>
+      <li>You may request data export prior to termination</li>
+    </ul>
+
+    <h2>11. Governing Law</h2>
+    <p>This Agreement is governed by the laws of the State of New York, without regard to conflict of law principles. Any disputes shall be resolved in the courts of Rockland County, New York.</p>
+
+    <h2>12. Changes to This Agreement</h2>
+    <p>We may update this EULA from time to time. Material changes will be communicated via email or in-app notification at least 30 days before taking effect. Continued use after changes constitutes acceptance.</p>
+
+    <h2>13. Contact</h2>
+    <p>
+      <strong>Zalmy.AI</strong><br>
+      <a href="mailto:hello@ledgerrail.com">hello@ledgerrail.com</a>
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/">LedgerRail</a>
+        <p>A Zalmy.AI Product</p>
+      </div>
+      <div class="footer-links">
+        <a href="/legal/eula.html">EULA</a>
+        <a href="/legal/privacy.html">Privacy Policy</a>
+        <a href="mailto:hello@ledgerrail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 Zalmy.AI. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
